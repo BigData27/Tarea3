@@ -1,4 +1,8 @@
-# Gabriel Giraldo - UNAD - Big Data - Procesamiento en batch
+''' UNAD - Big Data - Procesamiento en batch
+    Nombre del data set: Reporte Hurto por Modalidades Policía Nacional
+    origen de datos: https://www.datos.gov.co/api/views/9vha-vh9n/rows.csv
+    Autor: Gabriel Giraldo 
+'''
 
 #Importamos librerias necesarias
 from pyspark.sql import SparkSession, functions as F
