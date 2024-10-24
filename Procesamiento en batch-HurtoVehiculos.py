@@ -61,6 +61,12 @@ print('\n Valores únicos de ARMAS / MEDIOS despues de ajustarlos \n')
 for fila in unicos_armedio:
     print(fila['ARMAS MEDIOS'])
 
+# Se evidenció que existe variacion en mayuscula y minusculas 
+# Por lo cual se debió unificar todo en mayuscula en Departamento y Municipio
+
+df = df.withColumn('DEPARTAMENTO', F.upper(df['DEPARTAMENTO']))
+df = df.withColumn('MUNICIPIO', F.upper(df['MUNICIPIO']))
+
 # Ya los datos están acordes para su análisis
 
 # Filtrar datos de hurto de vehículos y motocicletas
